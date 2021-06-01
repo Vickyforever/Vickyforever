@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<HTML lang="en">
+  <HEAD>
+     <meta charset="UTF-8">
+     <!-- 制作一个梦想表格，多用户，可以不断添加，更改，删除 -->
+    <TITLE>TO THE END OF THE WORLD!!!</TITLE>
+    <!-- <base href="//www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl/images/proud.jpg" target="_blank"> -->
+    <script> 
+      function showtime()
+      {
+        window.alert("Hello world!\n大家好")
+        document.getElementById('dispmsg').innerHTML="HELLOHAHA"
+        var dispContent = document.getElementById('dispMsg').innerHTML;//innerTEXT;
+        window.alert(dispContent +"n Hello")
+
+      }
+    </script>
+
+    <style>
+      
+    </style>
+    </HEAD>
+    <BODY bgcolor="#E0FFFF">
+      <!--   <DIV STYLLE ="font-size:30px;"color="#668B8B">HOW TO GGGGO THERE???</DIV> -->
+      <p>无边框的图片链接:
+      <a href="https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl">
+      <img border="0" src="proud.jpg" alt="Google" width="80" height="80"></a>
+       </p>
+<p>
+<a href="#C4"><small>查看梦想清单</small></a>
+</p>
+<!--  -->
+        <p align ="center" style="color:#8B7B8B">HOW TO GGGGGGGGO THERE??? 
+            <br><u>MY DREAM </u></br>
+        </p>
+        <hr>
+        <h1 align ="center"  color="#2F4F4F"size="15px">梦想报道</h1>
+        <!-- 超链接 -->
+        <p>
+       <a href="https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl" target="_blank">点这个连接</a> 将在新窗口中加载，因为 target 属性被设置为 "_blank"。
+        </p>
+
+        <p>
+        <a href="https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl">这个连接</a> 也将在新窗口中加载，即使没有 target 属性。
+        </p>
+
+        <p>
+       <a href="/index.html">本文本</a> 是一个指向本网站中的一个页面的链接。
+       </p>
+
+       <p>
+        <a href="http://www.microsoft.com/">本文本</a> 是一个指向万维网上的页面的链接。
+       </p>
+
+        <!-- <button type="button"></button> -->
+        <button name="button">Click me</button> 
+        <button onclick="showtime()">right now</button> 
+        <div id="dispMsg">&nbsp;</div>
+        <form>
+    <input type="button" value="Hello world!">
+        </form>
+        <div class="">
+            <input type="button"  style="border:1px solid #ccc;background:#fff" value="增加" οnclick="createTable()"/>
+            <input type="button"  style="border:1px solid #ccc;background:#fff" value="修改" οnclick="updateTable()"/>
+            <input type="button"  style="border:1px solid #ccc;background:#fff" value="查找" οnclick="searchTable()"/>
+            <input type="button"  style="border:1px solid #ccc;background:#fff" value="删除" οnclick="delRow()"/><br/> 
+            <input type="text" value="" id="textId">
+            <<input type="submit" name="information" value="点我发送">
+        </div>
+        <!-- 单选 -->
+        <form>
+       男性：
+       <input type="radio" checked="checked" name="Sex" value="male"/>
+      女性：
+      <input type="radio" name="Sex" value="female" />
+<br>
+      <form>
+    <input type="radio" name="sex" value="male" checked >Male
+    <br>
+    <input type="radio" name="sex" value="female" >Female
+</form>
+</form>
+
+<!-- search pic -->
+<div class="search">
+  <input type="text"placeholder="搜索" name="">
+  <i class ="fa fa-search" aria-hidden="true">
+</div>
+
+<p size ="1">当用户点击一个单选按钮时，该按钮会变为选中状态，其他所有按钮会变为非选中状态。</p>
+<!-- 下拉菜单 -->
+<form>
+    <select name="dreams">
+        <option value="fly"> fly!</option>
+        <!-- 下行是预选值 -->
+        <option value="rich" selected="selected">rich</option>
+        <option value="magic">magic</option>
+        <option value="beauty">beauty</option>
+    </select> 
+</form>
+<!-- 密码域 -->
+ <br>
+     <form>
+      用户：
+      <input type="text" name="user">
+       密码：
+       <input type="password" name="password">
+      </form>
+      <!-- 文本域 text fields -->
+      <br>
+      <form>
+名：
+<input type="text" name="firstname">
+<br />
+姓：
+<input type="text" name="lastname">
+</form>
+<br>
+<form action="/example/html5/demo_form.asp" method="get">
+Date: <input type="date" name="user_date" />
+<input type="submit" />
+</form>
+<br>
+<!-- 文本域（多行文本输入控件,可写入的字符字数不受限制 -->
+<textarea cols="30" rows="5">
+      做梦吧你
+</textarea>
+<p>您无法对本实例进行编辑，因为我们的在线编辑器使用textarea 进行输入，而游览器不允许texatearea 中存在
+另一个 textarea。
+</p>
+
+
+<!--带有复选框的表单， 此表单包含两个复选框和一个确认按钮 -->
+<br>
+  <form name="input" action="schooltimenew.html" method="get">
+    选我人美:
+    <input type="checkbox" name="dream" value="beauty" checked="checked" />
+    <br />
+    选我最帅:
+    <input type="checkbox" name="dream" value="handsome" />
+    <br />
+    选我有钱:
+    <input type="checkbox" name="dream" value="rich" />
+    <br />
+    <input type="submit" value="Submit">
+  
+</form>
+
+<form action="./schooltimenew.html" method="post" enctype="text/plain">
+<h3>这个表单会把电子邮件发送到xx</h3>
+    姓名：<br />
+    <input type="text" name="name" value="开开" size="20">
+    <br />
+    电邮：<br />
+    <input type="text" name="mail" value="yourmail" size="20">
+    <br />
+    内容：<br />
+    <input type="text" name="comment" value="yourcomment" size="40">
+    <br /><br />
+    <input type="submit" value="发送">
+    <input type="reset" value="重置">
+</form>
+
+<!-- 实例 -->
+  <br>
+
+
+
+  <div style="border: 2px solid #2E8B57; min-height: 100px; width:800px; margin-top: 10px; background-color:#C1FFC1; " >
+         <form action="school time.html">
+          <fieldset>
+              <legend>健康信息</legend>
+           体重：<input type="text" /> &nbsp; &nbsp;&nbsp; 心跳：<input type="text" />  &nbsp;&nbsp;&nbsp;    血型：<input type="text"/> </br>
+              血压：<input type="text" /></br>
+              血糖：<input type="text" />     身高：<input type="text" />
+            
+          </fieldset>
+
+           <input type="submit" value="Submit">
+        </form>
+  
+  </div>
+<!-- 向页面添加表单。此表单包含两个输入框和一个确认按钮 -->
+<form action="school time.html">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Monuse">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+<!-- <p>如果表单周围没有边框，说明您的游览器太老了。</p> -->
+
+<!-- 创建表格 -->
+        <table align ="center" border="1" color: "#CFCFCF" cellpadding="10">
+            <caption><a id ="C4">梦想清单</a></caption>
+         <colgroup>
+          <col>
+          <col style="background-color: #6C7B8B" span = "6">
+         </colgroup>
+
+        <tr>
+        <td>&nbsp</td>
+         <th>Dream 1</th>
+         <th>Dream 2</th>
+         <th>Dream 3</th>
+         <th>Dream 4</th>
+         <th style= "width: 80px" border:"8px solid #C1437A">Dream 5</th>
+        </tr>
+        <tr>
+        <td>C</td>
+        <td style="background-color: #97DB9A">O</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        </tr>
+        <tr>
+     <td >B</td>
+     <td>&nbsp</td>
+     <td>&nbsp</td>
+     <td>&nbsp</td>
+     <td>&nbsp</td>
+    <td>&nbsp</td>
+ </tr>
+
+</table>
+
+
+<ul>
+    <li>一飞冲天</li>
+       <ul>
+    <li>来了</li>
+    <li>老弟</li>
+    </ul>
+    <li>美梦成真</li>
+    <li>真的是你</li>
+</ul>
+<!-- 右下角放置按钮 -->
+     <button style=" position:absolute;right:0px;bottom:0px;width:60px;border:1px solid #aaa;background-color:#C1FFC1;">追加</button> 
+     <!-- <div class="gotoTop"></div> -->
+     </BODY>
+</html>
